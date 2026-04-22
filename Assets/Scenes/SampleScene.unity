@@ -210,6 +210,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca99de95a7e8f784a8ffe9e09cedea29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  input_IngresoEdad: {fileID: 1676913970}
+  txt_Resultado: {fileID: 805648731}
 --- !u!4 &352495750
 Transform:
   m_ObjectHideFlags: 0
@@ -302,7 +304,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 359874081}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 352495749}
+        m_MethodName: CheckLegalAge
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &359874081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1062,8 +1075,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000027657, y: 167}
-  m_SizeDelta: {x: 705.4242, y: 121.99925}
+  m_AnchoredPosition: {x: -0.0000076294, y: 202}
+  m_SizeDelta: {x: 811.7362, y: 110.68956}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1676913970
 MonoBehaviour:
