@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
 public class SumaDeNumerosUI : MonoBehaviour
 {
     public TMP_InputField input_N1;
@@ -10,14 +9,11 @@ public class SumaDeNumerosUI : MonoBehaviour
     public TextMeshProUGUI txt_Resultado;
     // Start is called before the first frame update
     void Start()
-    {
-        
+    { 
     }
-
     // Update is called once per frame
     void Update()
-    {
-        
+    {    
     }
     public void AddToNumbers (){
         int numeroUno = int.Parse(input_N1.text);
